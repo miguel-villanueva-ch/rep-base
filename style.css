@@ -175,6 +175,9 @@ a{
     border-radius: 10px;
 }
 .programa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-area: programa;
 }
 .programa img{
