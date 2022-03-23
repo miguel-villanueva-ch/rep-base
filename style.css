@@ -33,7 +33,6 @@ header{
     grid-area: nombre;
     background-image: url("imagenes/cielonombre1.jpg");
     display: flex;
-    /* justify-content:center; */
     align-items: center;
 }
 .cab-nombre h1{
@@ -88,11 +87,18 @@ header{
     100% {margin-right: 0px;}
 }
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 700px;
+    grid-template-areas: 
+        "subTitGal subTitGal subTitGal"
+        "programa programa programa";
+        /* "tcf tcf tcf"
+        "icf icf icf"
+        "tchn tchn tchn"
+        "ichn ichn ichn"; */
 }
+
 .video1{
     width: 50%;
     margin: 5px;
@@ -161,17 +167,15 @@ a{
 }
 .galeria div{
     position: fixed;
-    top: 168px;
     right: 0px;
+    top: 170px;
     width: 100px;
-    height: 70px;
-    padding: 5px;
+    text-align: center;
+    background-color: aqua;
     border-radius: 10px;
-    background-color: rgba(0, 255, 255, 0.5);
 }
 .programa{
-    display: flex;
-    flex-flow: wrap;
+    grid-area: programa;
 }
 .programa img{
     width: 400px;
@@ -180,8 +184,7 @@ a{
     box-shadow: 4px 4px 5px gray;
 }
 .subTitGal{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    grid-area: subTitGal;
     text-align: center;
     background-color: aqua;
 }
