@@ -37,6 +37,15 @@ header{
     align-items: center;
 }
 .cab-nombre h1{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}     
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.cab-nombre h1{
     color: white;
     padding: 27%;
     font-size: 42px;
@@ -68,6 +77,15 @@ header{
 .titulo h1{
     color: white;
     text-shadow: 2px 2px 3px rgba(97, 124, 128, 0.788);
+}
+.titulo h1{
+    animation-duration: 2s;
+    animation-name: entrada;
+    animation-iteration-count:initial;
+}     
+@keyframes entrada {
+    0% {margin-right: 700px;}
+    100% {margin-right: 0px;}
 }
 main{
     display: flex;

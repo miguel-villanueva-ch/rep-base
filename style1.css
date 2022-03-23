@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.padre{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 30px 350px 130px;
+    grid-template-areas: 
+        "logo nombre nombre"
+        "logo menuc menuc"
+        "cuerpo cuerpo lateral"
+        "pie pie pie";
+}
+.a_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagenes/CieloLogo1.jpg");
+    background-size: cover;
+    grid-area: logo;
+    order: 1;
+}
+.a_logo img{
+    width: 200px;
+    height: 110px;
+}
+.titulo{
+    display: flex;
+    padding-left: 30%;
+    align-items: center;
+    background-image: url("imagenes/CieloNombre1.jpg");
+    grid-area: nombre;
+    color: white;
+    font-style: italic;
+    font-size: 130%;
+    order: 1;
+}
+.lista_n{
+    display: flex;
+    /* padding-left: 25%; */
+    justify-content:space-between;
+    align-items: center;
+    grid-area: menuc;   
+    background-image: url("imagenes/CieloMenu1.jpg");
+    order: 1;
+}
+.lista_m {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.233);
+}
+.lista_m li{
+    padding: 5px 10%;
+    /* background-color: rgba(0, 255, 255, 0.233); */
+}
+.g{
+    background-color: rgb(246, 252, 166);
+    grid-area: cuerpo;
+}
+.h{
+    background-color: rgb(122, 189, 130);
+    grid-area: lateral;
+}
+.i{
+    background-image: url("imagenes/CieloC1.jpg");
+    grid-area: pie;
+}

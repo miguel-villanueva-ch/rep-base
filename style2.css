@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*@keyframes un_efecto {
+    0% {margin-left: 10px; }
+    100% {margin-left: 250px;}
+    0% {margin-top: 10px; }
+    100% {margin-top: 250px;}
+    }
+    div {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(209, 243, 209);
+        animation-name: un_efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s;
+        animation-delay: 3s;
+     }*/
+div{
+    width: 100%;
+    text-align: center;
+}
+div {
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}     
+@keyframes aparecer {
+    /*0% {opacity: 0;}
+    100% {opacity: 1;}*/
+    0% {transform: rotatey(0deg);}
+    100% {transform: rotatey(360deg);}
+}
+     
