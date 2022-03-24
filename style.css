@@ -86,19 +86,9 @@ header{
     0% {margin-right: 700px;}
     100% {margin-right: 0px;}
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30px 700px;
-    grid-template-areas: 
-        "subTitGal subTitGal subTitGal"
-        "programa programa programa";
-        /* "tcf tcf tcf"
-        "icf icf icf"
-        "tchn tchn tchn"
-        "ichn ichn ichn"; */
+.empezar{
+    display: flex;
 }
-
 .video1{
     width: 50%;
     margin: 5px;
@@ -163,7 +153,13 @@ a{
     padding: 30px;
 }
 .galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 700px;
     display: inline-block;
+    grid-template-areas: 
+        "subTitGal subTitGal subTitGal"
+        "programa programa programa";
 }
 .galeria div{
     position: fixed;
