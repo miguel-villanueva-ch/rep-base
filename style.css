@@ -170,6 +170,11 @@ a{
     background-color: aqua;
     border-radius: 10px;
 }
+.galeria div a:hover{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
 .programa{
     display: flex;
     flex-wrap: wrap;
@@ -188,26 +193,42 @@ a{
     background-color: aqua;
 }
 .plano{
-    margin: 15px 15px;
-    gap: 15px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px;
+    grid-template-areas:
+        "b-i b-c b-d";
 }
 .plano iframe{
-    width: 450px;
-    height: 350px;
+    grid-area: b-c;
 }
 .plano img{
-    width: 400px;
-    height: 350px;
+    align-items: center;
+    grid-area: b-i;
 }
 .plano div{
-    width: 450px;
-    height: 350px;
+    grid-area: b-d;
     padding: 15px;
     background-color: rgb(247, 243, 188);
 }
+.bloque{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    box-shadow: 3px 3px 4px gray;
+}
 .fondoformulario{
     background-color: bisque;
+    display: flex;
+    justify-content:space-evenly;
+}
+.fondoformulario img{
+    display: flex;
+    width: 280px;
+    height: 200px;
+    justify-content: center;
+    margin-top: 3%;
+    box-shadow: 4px 4px 5px gray;
 }
 .formulario{
     display: flex;
@@ -220,14 +241,14 @@ a{
     display: inline-block;
     padding: 10px;
 }
-.formulario label{
+.formulario div label{
     display: block;
+    width: 180px;
     margin-bottom: 10px;
     text-align: right;
 }
 .formulario input{
-    display: block;
-    width: 250px;
+    width: 253px;
     margin-bottom: 1px;
     padding-bottom: 8px;
 }
@@ -240,8 +261,17 @@ a{
     margin-left: 195px;
 }
 @media screen and (max-width: 700px){
-    main{
+    .pie-firma{
         display: inline-block;
+        padding-top: 25px;
+    }
+    .plano{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .plano img{
+        display: block;
     }
     .video1{
         width: 100%;
@@ -250,5 +280,15 @@ a{
     .historia{
         width: 100%;
         margin: 20px;
+    }
+    .fondoformulario{
+        display: block;
+        padding: 5%;
+    }
+    .fondoformulario img{
+        margin: 5% 20%;
+    }
+    .informe{
+        padding: 5% 15%;
     }
 }
