@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    text-align: justify;
+    margin: 10px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 30px;
+    grid-template-areas: 
+        "logo nombre nombre"
+        "logo menu menu";
+}
+.cab-logo{
+    grid-area: logo;
+    background-size: cover;
+    background-image: url("imagenes/cielologo1.jpg");
+}
+.cab-logo img{
+    width: 180px;
+    height: auto;
+    margin: 15px;
+}
+.cab-nombre{
+    grid-area: nombre;
+    background-image: url("imagenes/cielonombre1.jpg");
+    display: flex;
+    align-items: center;
+}
+.cab-nombre h1{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}     
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.cab-nombre h1{
+    color: white;
+    padding: 27%;
+    font-size: 42px;
+    font-style: italic;
+    text-shadow: 4px 4px 3px rgba(77, 76, 158, 0.726);
+}
+.cab-menu{
+    grid-area: menu;
+    background-image: url("imagenes/cielonenu1.jpg");
+}
+.cab-menu ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+}
+.cab-menu ul li:hover{
+    padding: 4px 0px 4px 0px;
+    background-color: rgba(252, 252, 252, 0.719);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px gray;
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(139,196,241,0.85) 0%, rgba(254,254,254,0.15) 100%);
+}
+.titulo h1{
+    color: white;
+    text-shadow: 2px 2px 3px rgba(97, 124, 128, 0.788);
+}
+.titulo h1{
+    animation-duration: 2s;
+    animation-name: entrada;
+    animation-iteration-count:initial;
+}     
+@keyframes entrada {
+    0% {margin-right: 700px;}
+    100% {margin-right: 0px;}
+}
+.empezar{
+    display: flex;
+}
+.video1{
+    width: 50%;
+    margin: 5px;
+    text-align: center;
+}
+.video1 video{
+    width: 100%;
+}
+.historia{
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    margin: 15px;
+    overflow-y: scroll;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 130px;
+    grid-template-areas:
+        "pielogo piefirma piefirma";
+}
+.pie-logo{
+    grid-area: pielogo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagenes/pie1a.jpg");
+}
+.pie-logo img{
+    width: 180px;
+    height: auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.404);
+}
+.pie-firma{
+    grid-area: piefirma;
+    display: flex;
+    background-image: url("imagenes/pie2a.jpg");
+    color: white;
+    justify-content:space-around;
+    align-items: flex-end;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+}
+.parrafo{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+.informe1{
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    margin: 15px;
+    background-image: url("imagenes/foninf.jpg");
+    box-shadow: 4px 4px 5px gray;
+    overflow-y: hidden;
+}
+.informe1 h2{
+    padding: 30px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 700px;
+    display: inline-block;
+    grid-template-areas: 
+        "subTitGal subTitGal subTitGal"
+        "programa programa programa";
+}
+.galeria div{
+    position: fixed;
+    right: 0px;
+    top: 170px;
+    width: 100px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.galeria div a:hover{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+.programa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: programa;
+}
+.programa img{
+    width: 400px;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 4px 4px 5px gray;
+}
+.subTitGal{
+    grid-area: subTitGal;
+    text-align: center;
+    background-color: aqua;
+}
+.plano{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px;
+    grid-template-areas:
+        "b-i b-c b-d";
+}
+.plano iframe{
+    grid-area: b-c;
+}
+.plano img{
+    align-items: center;
+    grid-area: b-i;
+}
+.plano div{
+    grid-area: b-d;
+    padding: 15px;
+    background-color: rgb(247, 243, 188);
+}
+.bloque{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    box-shadow: 3px 3px 4px gray;
+}
+.fondoformulario{
+    background-color: bisque;
+    display: flex;
+    justify-content:space-evenly;
+}
+.fondoformulario img{
+    display: flex;
+    width: 280px;
+    height: 200px;
+    justify-content: center;
+    margin-top: 3%;
+    box-shadow: 4px 4px 5px gray;
+}
+.formulario{
+    display: flex;
+    height: 240px;
+    width: 480px;
+    margin: 20px;
+    box-shadow: 4px 4px 5px gray;
+}
+.formulario div{
+    display: inline-block;
+    padding: 10px;
+}
+.formulario div label{
+    display: block;
+    width: 180px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.formulario input{
+    width: 253px;
+    margin-bottom: 1px;
+    padding-bottom: 8px;
+}
+#boton{
+    width: 60px;
+    margin-left: 195px;
+}
+#boton1{
+    width: 60px;
+    margin-left: 195px;
+}
+@media screen and (max-width: 700px){
+    .pie-firma{
+        display: inline-block;
+        padding-top: 25px;
+    }
+    .plano{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .plano img{
+        display: block;
+    }
+    .video1{
+        width: 100%;
+        margin: 20px;
+    }
+    .historia{
+        width: 100%;
+        margin: 20px;
+    }
+    .fondoformulario{
+        display: block;
+        padding: 5%;
+    }
+    .fondoformulario img{
+        margin: 5% 20%;
+    }
+    .informe{
+        padding: 5% 15%;
+    }
+}

@@ -132,6 +132,10 @@ footer{
     align-items: flex-end;
     padding: 15px;
 }
+.pie-firma img{
+    width: 18px;
+    height: 18px;
+}
 a{
     text-decoration: none;
 }
@@ -139,6 +143,13 @@ a{
     overflow: hidden;
     width: 100%;
     margin: auto;
+}
+img{
+    height: 300px;
+}
+.t-n{
+    text-align: center;
+    color: darkgoldenrod;
 }
 .informe1{
     display: inline-block;
@@ -167,7 +178,7 @@ a{
     top: 170px;
     width: 100px;
     text-align: center;
-    background-color: aqua;
+    background-color: lightgray;
     border-radius: 10px;
 }
 .galeria div a:hover{
@@ -190,7 +201,7 @@ a{
 .subTitGal{
     grid-area: subTitGal;
     text-align: center;
-    background-color: aqua;
+    background-color: lightgray;
 }
 .plano{
     display: grid;
@@ -222,43 +233,34 @@ a{
     display: flex;
     justify-content:space-evenly;
 }
+.marcoform{
+    width: 400px;
+    margin: 20px;
+    border-style:groove;
+}
 .fondoformulario img{
     display: flex;
-    width: 280px;
-    height: 200px;
-    justify-content: center;
-    margin-top: 3%;
-    box-shadow: 4px 4px 5px gray;
-}
-.formulario{
-    display: flex;
-    height: 240px;
-    width: 480px;
+    width: 350px;
+    height: 260px;
     margin: 20px;
-    box-shadow: 4px 4px 5px gray;
+    border-style:groove;
 }
-.formulario div{
+.fondoformulario form div label{
     display: inline-block;
-    padding: 10px;
+    width: 85px;
+    margin: 5px 3px 2px 17px;
+    vertical-align: top;
 }
-.formulario div label{
-    display: block;
-    width: 180px;
-    margin-bottom: 10px;
-    text-align: right;
+.check-centrar{
+    display: flex;
+    align-items: center;
 }
-.formulario input{
-    width: 253px;
-    margin-bottom: 1px;
-    padding-bottom: 8px;
+.boton-form{
+    margin: 10px 23px;
+    text-align: end;
 }
-#boton{
-    width: 60px;
-    margin-left: 195px;
-}
-#boton1{
-    width: 60px;
-    margin-left: 195px;
+.fondoformulario form div input{
+    margin-bottom: 4px;
 }
 @media screen and (max-width: 700px){
     .pie-firma{
