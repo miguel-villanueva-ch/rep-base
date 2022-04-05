@@ -67,8 +67,9 @@ header{
     box-shadow: 2px 2px 3px gray;
 }
 .titulo{
-    grid-area: titulo;
+    /* grid-area: titulo; */
     display: flex;
+    height: 40px;
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, rgba(139,196,241,0.85) 0%, rgba(254,254,254,0.15) 100%);
@@ -85,24 +86,6 @@ header{
 @keyframes entrada {
     0% {margin-right: 700px;}
     100% {margin-right: 0px;}
-}
-.empezar{
-    display: flex;
-}
-.video1{
-    width: 50%;
-    margin: 5px;
-    text-align: center;
-}
-.video1 video{
-    width: 100%;
-}
-.historia{
-    width: 50%;
-    height: 300px;
-    padding: 20px;
-    margin: 15px;
-    overflow-y: scroll;
 }
 footer{
     display: grid;
@@ -151,28 +134,16 @@ img{
     text-align: center;
     color: darkgoldenrod;
 }
-.informe1{
-    display: inline-block;
+.img-gal{
+    width: 300px;
     height: 300px;
-    width: 400px;
     margin: 15px;
-    background-image: url("imagenes/foninf.jpg");
-    box-shadow: 4px 4px 5px gray;
-    overflow-y: hidden;
+    border-style:groove;
 }
-.informe1 h2{
-    padding: 30px;
+.fondogaleria{
+    background-color: bisque;
 }
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30px 700px;
-    display: inline-block;
-    grid-template-areas: 
-        "subTitGal subTitGal subTitGal"
-        "programa programa programa";
-}
-.galeria div{
+.menu-flo{
     position: fixed;
     right: 0px;
     top: 170px;
@@ -181,22 +152,10 @@ img{
     background-color: lightgray;
     border-radius: 10px;
 }
-.galeria div a:hover{
+.menu-flo a:hover{
     color: white;
     text-shadow: 1px 1px 2px black;
     font-weight: bold;
-}
-.programa{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-area: programa;
-}
-.programa img{
-    width: 400px;
-    height: 350px;
-    margin: 15px;
-    box-shadow: 4px 4px 5px gray;
 }
 .subTitGal{
     grid-area: subTitGal;
@@ -204,29 +163,15 @@ img{
     background-color: lightgray;
 }
 .plano{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px;
-    grid-template-areas:
-        "b-i b-c b-d";
-}
-.plano iframe{
-    grid-area: b-c;
-}
-.plano img{
-    align-items: center;
-    grid-area: b-i;
-}
-.plano div{
-    grid-area: b-d;
+    width: 350px;
+    height: 320px;
     padding: 15px;
-    background-color: rgb(247, 243, 188);
+    box-shadow: 3px 3px 4px gray;
 }
 .bloque{
     width: 90%;
     height: 90%;
     margin: 5%;
-    box-shadow: 3px 3px 4px gray;
 }
 .fondoformulario{
     background-color: bisque;
@@ -234,7 +179,7 @@ img{
     justify-content:space-evenly;
 }
 .marcoform{
-    width: 400px;
+    width: 500px;
     margin: 20px;
     border-style:groove;
 }
@@ -244,23 +189,6 @@ img{
     height: 260px;
     margin: 20px;
     border-style:groove;
-}
-.fondoformulario form div label{
-    display: inline-block;
-    width: 85px;
-    margin: 5px 3px 2px 17px;
-    vertical-align: top;
-}
-.check-centrar{
-    display: flex;
-    align-items: center;
-}
-.boton-form{
-    margin: 10px 23px;
-    text-align: end;
-}
-.fondoformulario form div input{
-    margin-bottom: 4px;
 }
 @media screen and (max-width: 700px){
     .pie-firma{
