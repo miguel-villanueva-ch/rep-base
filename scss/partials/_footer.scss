@@ -1,0 +1,32 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 130px;
+    grid-template-areas:
+        "pielogo piefirma piefirma";
+    .pie-logo{
+        grid-area: pielogo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../imagenes/pie1a.jpg");
+        img{
+            width: 180px;
+            height: auto;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.404);
+        }
+    }
+    .pie-firma{
+        grid-area: piefirma;
+        display: flex;
+        background-image: url("../imagenes/pie2a.jpg");
+        color: white;
+        justify-content:space-around;
+        align-items: flex-end;
+        padding: 15px;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

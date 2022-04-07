@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/titulos";
+@import "./partials/footer";
+@import "./partials/galeria";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    text-align: justify;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
+.parrafo{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+img{
+    height: 300px;
+}
+.t-n{
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.plano{
+    width: 350px;
+    height: 320px;
+    padding: 15px;
+    box-shadow: 3px 3px 4px gray;
+}
+.bloque{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+.fondoformulario{
+    background-color: bisque;
+    display: flex;
+    justify-content:space-evenly;
+}
+.marcoform{
+    width: 500px;
+    margin: 20px;
+    border-style:groove;
+}
+.fondoformulario img{
+    display: flex;
+    width: 350px;
+    height: 260px;
+    margin: 20px;
+    border-style:groove;
+}
+@media screen and (max-width: 700px){
+    .pie-firma{
+        display: inline-block;
+        padding-top: 25px;
+    }
+    .plano{
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .plano img{
+        display: block;
+    }
+    .video1{
+        width: 100%;
+        margin: 20px;
+    }
+    .historia{
+        width: 100%;
+        margin: 20px;
+    }
+    .fondoformulario{
+        display: block;
+        padding: 5%;
+    }
+    .fondoformulario img{
+        margin: 5% 20%;
+    }
+    .informe{
+        padding: 5% 15%;
+    }
+}

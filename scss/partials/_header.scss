@@ -1,0 +1,54 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 100px 30px;
+    grid-template-areas: 
+        "logo nombre nombre"
+        "logo menu menu";
+    .cab-logo{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-image: url("../imagenes/cielologo1.jpg");
+        img{
+            width: 180px;
+            height: 140px;
+        }
+    }
+    .cab-nombre{
+        grid-area: nombre;
+        background-image: url("../imagenes/cielonombre1.jpg");
+        display: flex;
+        align-items: center;
+        h1{
+            color: white;
+            padding: 27%;
+            font-size: 42px;
+            font-style: italic;
+            text-shadow: 4px 4px 3px rgba(77, 76, 158, 0.726);
+            animation-duration: 5s;
+            animation-name: aparecer;
+            animation-iteration-count:initial;
+        }
+        @keyframes aparecer {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    }
+    .cab-menu{
+        grid-area: menu;
+        background-image: url("../imagenes/cielonenu1.jpg");
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content:space-evenly;
+            li:hover{
+                padding: 4px 0px 4px 0px;
+                background-color: rgba(252, 252, 252, 0.719);
+                border-radius: 8px;
+                box-shadow: 2px 2px 3px gray;
+            }
+        }
+    }
+}

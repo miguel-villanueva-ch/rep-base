@@ -21,17 +21,18 @@ header{
 }
 .cab-logo{
     grid-area: logo;
+    display: flex;
+    justify-content: center;
     background-size: cover;
-    background-image: url("imagenes/cielologo1.jpg");
+    background-image: url("../imagenes/cielologo1.jpg");
 }
 .cab-logo img{
     width: 180px;
-    height: auto;
-    margin: 15px;
+    height: 140px;
 }
 .cab-nombre{
     grid-area: nombre;
-    background-image: url("imagenes/cielonombre1.jpg");
+    background-image: url("../imagenes/cielonombre1.jpg");
     display: flex;
     align-items: center;
 }
@@ -53,7 +54,7 @@ header{
 }
 .cab-menu{
     grid-area: menu;
-    background-image: url("imagenes/cielonenu1.jpg");
+    background-image: url("../imagenes/cielonenu1.jpg");
 }
 .cab-menu ul{
     display: flex;
@@ -67,7 +68,6 @@ header{
     box-shadow: 2px 2px 3px gray;
 }
 .titulo{
-    /* grid-area: titulo; */
     display: flex;
     height: 40px;
     justify-content: center;
@@ -99,7 +99,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("imagenes/pie1a.jpg");
+    background-image: url("../imagenes/pie1a.jpg");
 }
 .pie-logo img{
     width: 180px;
@@ -109,7 +109,7 @@ footer{
 .pie-firma{
     grid-area: piefirma;
     display: flex;
-    background-image: url("imagenes/pie2a.jpg");
+    background-image: url("../imagenes/pie2a.jpg");
     color: white;
     justify-content:space-around;
     align-items: flex-end;
@@ -149,7 +149,7 @@ img{
     top: 170px;
     width: 100px;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgb(100, 143, 98);
     border-radius: 10px;
 }
 .menu-flo a:hover{
