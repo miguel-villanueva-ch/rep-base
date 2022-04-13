@@ -16,22 +16,30 @@
         <div class="cab-nombre">
             <h1>FamiCatólica</h1>
         </div>
-        <nav class="cab-menu">
-            <ul>
-                <li> <a href="index.html"> Inicio </a> </li>
-                <li> <a href="informacion.html"> Informacion </a> </li>
-                <li> <a href="galeria.html"> Galería </a> </li>
-                <li> <a href="ubicacion.html"> Ubicacion </a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
+        <ul class="nav nav-tabs justify-content-end cab-menu">
+          <li class="nav-item">
+            <a class="nav-link altcaja" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link altcaja" href="informacion.html">Información</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link altcaja" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link altcaja" href="ubicacion.html">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link altcaja active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
     </header>
     <div class="titulo">
-        <h1>Contacto</h1>
+        <h2>Contacto</h2>
     </div>
     <main class="fondoformulario">
-        <form class="row mb-3 marcoform">
-            <div class="row mb-3">
+        <form class="row sm-3 marcoform">
+            <div class="row sm-3">
               <label for="sexo" class="col-sm-2 col-form-label-sm">Sexo</label>
               <div class="col-sm-10">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
@@ -40,19 +48,19 @@
                 <label class="col-sm-2 col-form-label-sm form-check-label" for="flexRadioDefault1">Varon</label>
               </div>
             </div>
-            <div class="row mb-3">
+            <div class="row sm-3">
               <label for="inputAddress2" class="col-sm-2 col-form-label-sm">Nombre</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="Nombre y Apellido">
               </div>
             </div>
-            <div class="row mb-3">
+            <div class="row sm-3">
               <label for="inputEmail4" class="col-sm-2 col-form-label-sm">Correo</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control form-control-sm" id="inputEmail4">
               </div>
             </div>
-            <div class="row mb-3">
+            <div class="row sm-3">
                 <label for="pais" class="col-sm-2 col-form-label-sm">País</label>
                 <div class="col-sm-10">
                     <select class="form-select form-select-sm" aria-label="Default select example">
@@ -293,13 +301,13 @@
                     </select>
                 </div>
             </div>
-            <div class="row mb-3">
+            <div class="row sm-3">
               <label for="inputAddress" class="col-sm-2 col-form-label-sm">Dirección</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control form-control-sm" id="inputAddress">
               </div>
             </div>
-            <div class="row mb-3">
+            <div class="row sm-3">
               <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label-sm">Comenta</label>
               <div class="col-sm-10">
                 <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>

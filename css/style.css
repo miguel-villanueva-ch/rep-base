@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.fondoformulario, footer .pie-logo, header .cab-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -7,8 +13,6 @@ header {
 }
 header .cab-logo {
   grid-area: logo;
-  display: flex;
-  justify-content: center;
   background-size: cover;
   background-image: url("../imagenes/cielologo1.jpg");
 }
@@ -27,7 +31,7 @@ header .cab-nombre h1 {
   padding: 27%;
   font-size: 42px;
   font-style: italic;
-  text-shadow: 4px 4px 3px rgba(77, 76, 158, 0.726);
+  text-shadow: 2px 2px 3px black;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-name: aparecer;
@@ -55,16 +59,8 @@ header .cab-menu {
   grid-area: menu;
   background-image: url("../imagenes/cielonenu1.jpg");
 }
-header .cab-menu ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-}
-header .cab-menu ul li:hover {
-  padding: 4px 0px 4px 0px;
-  background-color: rgba(252, 252, 252, 0.719);
-  border-radius: 8px;
-  box-shadow: 2px 2px 3px gray;
+header .altcaja {
+  padding: 2px 16px;
 }
 
 .titulo {
@@ -74,9 +70,9 @@ header .cab-menu ul li:hover {
   align-items: center;
   background: linear-gradient(0deg, rgba(139, 196, 241, 0.85) 0%, rgba(254, 254, 254, 0.15) 100%);
 }
-.titulo h1 {
+.titulo h2 {
   color: white;
-  text-shadow: 2px 2px 3px rgba(97, 124, 128, 0.788);
+  text-shadow: 1px 1px 2px black;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: entrada;
@@ -109,15 +105,12 @@ footer {
 }
 footer .pie-logo {
   grid-area: pielogo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../imagenes/pie1a.jpg");
 }
 footer .pie-logo img {
   width: 180px;
   height: auto;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.404);
+  box-shadow: 2px 2px 3px black;
 }
 footer .pie-firma {
   grid-area: piefirma;
@@ -156,9 +149,43 @@ footer .pie-firma img {
   text-shadow: 1px 1px 2px black;
   font-weight: bold;
 }
-.fondogaleria .subTitGal {
+.fondogaleria .subtitgal {
   text-align: center;
   background-color: lightgray;
+}
+
+.fondoformulario {
+  background-color: bisque;
+}
+.fondoformulario img {
+  width: 450px;
+  height: 350px;
+  margin: 20px;
+  border-style: groove;
+}
+
+.marcoform {
+  width: 500px;
+  height: 360px;
+  margin: 20px;
+  border-style: groove;
+}
+
+.fondogaleria {
+  background-color: bisque;
+}
+
+.plano {
+  width: 350px;
+  height: 320px;
+  padding: 15px;
+  box-shadow: 2px 2px 3px black;
+}
+
+.bloque {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
 }
 
 * {
@@ -195,39 +222,6 @@ img {
   color: darkgoldenrod;
 }
 
-.plano {
-  width: 350px;
-  height: 320px;
-  padding: 15px;
-  box-shadow: 3px 3px 4px gray;
-}
-
-.bloque {
-  width: 90%;
-  height: 90%;
-  margin: 5%;
-}
-
-.fondoformulario {
-  background-color: bisque;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.marcoform {
-  width: 500px;
-  margin: 20px;
-  border-style: groove;
-}
-
-.fondoformulario img {
-  display: flex;
-  width: 350px;
-  height: 260px;
-  margin: 20px;
-  border-style: groove;
-}
-
 @media screen and (max-width: 700px) {
   .pie-firma {
     display: inline-block;
@@ -239,26 +233,14 @@ img {
     flex-wrap: wrap;
     justify-items: center;
   }
-
   .plano img {
     display: block;
-  }
-
-  .video1 {
-    width: 100%;
-    margin: 20px;
-  }
-
-  .historia {
-    width: 100%;
-    margin: 20px;
   }
 
   .fondoformulario {
     display: block;
     padding: 5%;
   }
-
   .fondoformulario img {
     margin: 5% 20%;
   }

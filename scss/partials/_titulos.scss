@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, rgba(139,196,241,0.85) 0%, rgba(254,254,254,0.15) 100%);
-    h1{
+    h2{
         color: white;
-        text-shadow: 2px 2px 3px rgba(97, 124, 128, 0.788);
+        text-shadow: map-get($colores, smb-txt);
         animation-duration: 2s;
         animation-name: entrada;
         animation-iteration-count:initial;

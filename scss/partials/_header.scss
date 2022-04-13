@@ -7,8 +7,7 @@ header{
         "logo menu menu";
     .cab-logo{
         grid-area: logo;
-        display: flex;
-        justify-content: center;
+        @extend %orden-c;
         background-size: cover;
         background-image: url("../imagenes/cielologo1.jpg");
         img{
@@ -26,7 +25,7 @@ header{
             padding: 27%;
             font-size: 42px;
             font-style: italic;
-            text-shadow: 4px 4px 3px rgba(77, 76, 158, 0.726);
+            text-shadow: map-get($colores, smb-bloq);
             animation-duration: 5s;
             animation-name: aparecer;
             animation-iteration-count:initial;
@@ -39,16 +38,8 @@ header{
     .cab-menu{
         grid-area: menu;
         background-image: url("../imagenes/cielonenu1.jpg");
-        ul{
-            display: flex;
-            list-style: none;
-            justify-content:space-evenly;
-            li:hover{
-                padding: 4px 0px 4px 0px;
-                background-color: rgba(252, 252, 252, 0.719);
-                border-radius: 8px;
-                box-shadow: 2px 2px 3px gray;
-            }
-        }
+    }
+    .altcaja{
+        padding: 2px 16px;
     }
 }

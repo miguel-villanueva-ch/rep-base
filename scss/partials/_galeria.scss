@@ -1,9 +1,10 @@
 .fondogaleria{
-    background-color: $c-fn-prin;
+    background-color: map-get($colores, fnd-princ);
     .img-gal{
-        width: 335px;
-        height: 325px;
-        margin: 10px;
+        // width: 335px;
+        // height: 325px;
+        // margin: 10px;
+        @include dimenc(335px, 325px, 10px);
         border-style:groove;
     }
     .menu-flo{
@@ -12,16 +13,16 @@
         top: 170px;
         width: 100px;
         text-align: center;
-        background-color: $c-fn-men-ti;
+        background-color: map-get($colores, fnd-secun);
         border-radius: 10px;
         a:hover{
             color: white;
-            text-shadow: $sombra-txt;
+            text-shadow: map-get($colores, smb-txt);
             font-weight: bold;
         }
     }
-    .subTitGal{
+    .subtitgal{
         text-align: center;
-        background-color: lightgray;
+        background-color: map-get($colores, fnd-secun);
     }
 }

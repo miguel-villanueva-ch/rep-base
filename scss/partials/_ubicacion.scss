@@ -1,0 +1,14 @@
+.fondogaleria{
+    background-color: map-get($colores, fnd-princ);
+}
+    .plano{
+        width: 350px;
+        height: 320px;
+        padding: 15px;
+        box-shadow: map-get($colores, smb-bloq);
+}
+.bloque{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}

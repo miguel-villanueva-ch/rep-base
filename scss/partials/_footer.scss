@@ -6,14 +6,12 @@ footer{
         "pielogo piefirma piefirma";
     .pie-logo{
         grid-area: pielogo;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %orden-c;
         background-image: url("../imagenes/pie1a.jpg");
         img{
             width: 180px;
             height: auto;
-            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.404);
+            box-shadow: map-get($colores, smb-bloq);
         }
     }
     .pie-firma{

@@ -1,4 +1,16 @@
-$c-fn-prin: bisque;
-$c-fn-men-ti: lightgray;
-$sombra-txt: 1px 1px 2px black;
-$sombra-mar: 2px 2px 3px black;
+$colores: (
+    fnd-princ: bisque,
+    fnd-secun: lightgray,
+    smb-txt: 1px 1px 2px black,
+    smb-bloq: 2px 2px 3px black,
+);
+%orden-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin dimenc($x, $y, $m) {
+    width: $x;
+    height: $y;
+    margin: $m;
+}

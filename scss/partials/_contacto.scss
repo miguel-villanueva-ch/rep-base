@@ -1,0 +1,12 @@
+.fondoformulario{
+    background-color: map-get($colores, fnd-princ);
+      @extend %orden-c;
+    img{
+        @include dimenc(450px, 350px, 20px);
+        border-style:groove;
+    }
+}
+.marcoform{
+    @include dimenc(500px, 360px, 20px);
+    border-style:groove;
+}
