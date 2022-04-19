@@ -1,30 +1,24 @@
-header{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 100px 30px;
-    grid-template-areas: 
-        "logo nombre nombre"
-        "logo menu menu";
+.cabecera{
+    display: flex;
+    justify-content:space-between;
+    background-image: url("../imagenes/cabezacielo3.jpg");
+    background-size: cover;
     .cab-logo{
-        grid-area: logo;
         @extend %orden-c;
-        background-size: cover;
-        background-image: url("../imagenes/cielologo1.jpg");
+        @include dimenc(20vw, 160px, 0px);
         img{
             width: 180px;
-            height: 140px;
+            height: 130px;
         }
     }
     .cab-nombre{
-        grid-area: nombre;
-        background-image: url("../imagenes/cielonombre1.jpg");
-        display: flex;
+        display: inline-block;
         align-items: center;
         h1{
             color: white;
-            padding: 27%;
             font-size: 42px;
             font-style: italic;
+            font-weight: bold;
             text-shadow: map-get($colores, smb-bloq);
             animation-duration: 5s;
             animation-name: aparecer;
@@ -34,12 +28,12 @@ header{
             0% {opacity: 0;}
             100% {opacity: 1;}
         }
-    }
-    .cab-menu{
-        grid-area: menu;
-        background-image: url("../imagenes/cielonenu1.jpg");
-    }
-    .altcaja{
-        padding: 2px 16px;
+        .titulop{
+            @extend %orden-c;
+            @include dimenc(80vw, 120px, 0px);
+        }
+        .cab-menu{
+            @extend %orden-c;
+        }
     }
 }

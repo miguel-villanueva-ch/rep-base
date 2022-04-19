@@ -33,10 +33,26 @@ img{
     text-align: center;
     color: darkgoldenrod;
 }
-@media screen and (max-width: 700px){
-    .pie-firma{
+@media only screen and (max-device-width: 650px){
+    .cabecera{
         display: inline-block;
-        padding-top: 25px;
+        .cab-logo{
+            width: 100vw;
+        }
+        .cab-nombre{
+            .titulop{
+                width: 100vw;
+            }
+        }
+    }
+    .pie{
+        display: inline-block;
+        .pie-logo{
+            width: 100vw;
+        }
+        .pie-firma{
+            display: inline-block;
+        }
     }
     .plano{
         display: inline-block;
@@ -46,14 +62,14 @@ img{
             display: block;
         }
     }
+    .vertical{
+        display: inline-block !important;
+    }
     .fondoformulario{
         display: block;
         padding: 5%;
         img{
             margin: 5% 20%;
         }
-    }
-    .informe{
-        padding: 5% 15%;
     }
 }

@@ -1,9 +1,6 @@
 .fondogaleria{
     background-color: map-get($colores, fnd-princ);
     .img-gal{
-        // width: 335px;
-        // height: 325px;
-        // margin: 10px;
         @include dimenc(335px, 325px, 10px);
         border-style:groove;
     }

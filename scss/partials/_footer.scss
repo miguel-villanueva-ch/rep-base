@@ -1,13 +1,10 @@
-footer{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 130px;
-    grid-template-areas:
-        "pielogo piefirma piefirma";
+.pie{
+    display: flex;
+    background-image: url("../imagenes/pie2a.jpg");
+    background-size: cover;
     .pie-logo{
-        grid-area: pielogo;
+        @include dimenc(20vw, 120px, 0px);
         @extend %orden-c;
-        background-image: url("../imagenes/pie1a.jpg");
         img{
             width: 180px;
             height: auto;
@@ -15,13 +12,8 @@ footer{
         }
     }
     .pie-firma{
-        grid-area: piefirma;
-        display: flex;
-        background-image: url("../imagenes/pie2a.jpg");
+        @extend %orden-c;
         color: white;
-        justify-content:space-around;
-        align-items: flex-end;
-        padding: 15px;
         img{
             width: 18px;
             height: 18px;
