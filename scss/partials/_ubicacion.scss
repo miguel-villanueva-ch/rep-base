@@ -1,14 +1,21 @@
-.fondogaleria{
+.fondoformulario{
     background-color: map-get($colores, fnd-princ);
+    @extend %orden-c;
+    div{
+        // @extend %orden-c;
+        margin: 15px;
+    }
 }
-    .plano{
-        width: 350px;
-        height: 320px;
-        padding: 15px;
-        box-shadow: map-get($colores, smb-bloq);
-}
-.bloque{
-    width: 90%;
-    height: 90%;
-    margin: 5%;
+.plano{
+    @include dimenc(70vw, 300px, 15px);
+    box-shadow: map-get($colores, smb-bloq);
+}    
+.blk-txt{
+    background-color: white;
+    box-shadow: map-get($colores, smb-bloq);
+    @include dimenc(70vw, 300px, 17px);
+    padding: 15px;
+    p{
+        text-align: center;
+    }
 }

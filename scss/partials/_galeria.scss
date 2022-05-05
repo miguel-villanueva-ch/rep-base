@@ -2,12 +2,16 @@
     background-color: map-get($colores, fnd-princ);
     .img-gal{
         @include dimenc(335px, 325px, 10px);
-        border-style:groove;
+    }
+    .img-gal:hover {
+        border-radius: 15px;
+        border: 5px solid white;
+        border-style:outset;
     }
     .menu-flo{
         position: fixed;
         right: 0px;
-        top: 170px;
+        top: 175px;
         width: 100px;
         text-align: center;
         background-color: map-get($colores, fnd-secun);
@@ -22,4 +26,95 @@
         text-align: center;
         background-color: map-get($colores, fnd-secun);
     }
+}
+.ventana-contenido{
+    background-color:beige;
+    width:300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    border: 2px solid white;
+    box-shadow: 3px 3px 5px black;
+    position: relative;
+}
+.ventana{
+    background-color: rgba(94, 92, 92, 0.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+}
+#miventana1:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana2:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana3:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana4:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana5:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana6:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana7:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana8:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana9:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana10:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana11:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana12:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana13:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana14:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana15:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana16:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana17:target{
+    opacity:0.8;
+    pointer-events:auto;
+}
+#miventana18:target{
+    opacity:0.8;
+    pointer-events:auto;
 }

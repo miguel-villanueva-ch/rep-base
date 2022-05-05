@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.fondoformulario, .pie .pie-firma, .pie .pie-logo, .cabecera .cab-nombre .cab-menu, .cabecera .cab-nombre .titulop, .cabecera .cab-logo {
+.fondoformulario, .fondoformulario1, .pie .pie-firma, .pie .pie-logo, .cabecera .cab-nombre .cab-menu, .cabecera .cab-nombre .titulop, .cabecera .cab-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +13,12 @@
 }
 .cabecera .cab-logo {
   width: 20vw;
-  height: 160px;
+  height: 150px;
   margin: 0px;
 }
 .cabecera .cab-logo img {
   width: 180px;
-  height: 130px;
+  height: 120px;
 }
 .cabecera .cab-nombre {
   display: inline-block;
@@ -55,7 +55,7 @@
 }
 .cabecera .cab-nombre .titulop {
   width: 80vw;
-  height: 120px;
+  height: 110px;
   margin: 0px;
 }
 .titulo {
@@ -122,12 +122,16 @@
   width: 335px;
   height: 325px;
   margin: 10px;
-  border-style: groove;
+}
+.fondogaleria .img-gal:hover {
+  border-radius: 15px;
+  border: 5px solid white;
+  border-style: outset;
 }
 .fondogaleria .menu-flo {
   position: fixed;
   right: 0px;
-  top: 170px;
+  top: 175px;
   width: 100px;
   text-align: center;
   background-color: lightgray;
@@ -143,10 +147,121 @@
   background-color: lightgray;
 }
 
-.fondoformulario {
+.ventana-contenido {
+  background-color: beige;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  border: 2px solid white;
+  box-shadow: 3px 3px 5px black;
+  position: relative;
+}
+
+.ventana {
+  background-color: rgba(94, 92, 92, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#miventana1:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana2:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana3:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana4:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana5:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana6:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana7:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana8:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana9:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana10:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana11:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana12:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana13:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana14:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana15:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana16:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana17:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#miventana18:target {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+.fondoformulario1 {
   background-color: bisque;
 }
-.fondoformulario img {
+.fondoformulario1 img {
   width: 450px;
   height: 350px;
   margin: 20px;
@@ -160,21 +275,47 @@
   border-style: groove;
 }
 
-.fondogaleria {
+.fondoformulario {
   background-color: bisque;
+}
+.fondoformulario div {
+  margin: 15px;
 }
 
 .plano {
-  width: 350px;
-  height: 320px;
-  padding: 15px;
+  width: 70vw;
+  height: 300px;
+  margin: 15px;
   box-shadow: 2px 2px 3px black;
 }
 
-.bloque {
-  width: 90%;
-  height: 90%;
-  margin: 5%;
+.blk-txt {
+  background-color: white;
+  box-shadow: 2px 2px 3px black;
+  width: 70vw;
+  height: 300px;
+  margin: 17px;
+  padding: 15px;
+}
+.blk-txt p {
+  text-align: center;
+}
+
+.marco_i {
+  margin: 15px;
+  border-style: groove;
+}
+.marco_i h2 {
+  margin-left: 15px;
+}
+.marco_i .parrafo_i {
+  margin: 0px 15px 15px;
+  -moz-column-count: 4;
+       column-count: 4;
+}
+.marco_i .parrafo_i img {
+  width: 100%;
+  height: auto;
 }
 
 * {
@@ -245,11 +386,8 @@ img {
     display: inline-block !important;
   }
 
-  .fondoformulario {
+  .fondoformulario1 {
     display: block;
-    padding: 5%;
-  }
-  .fondoformulario img {
-    margin: 5% 20%;
+    padding-left: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
