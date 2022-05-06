@@ -70,4 +70,10 @@ img{
         display: block;
         padding-left: 100px;
     }
+    .marco_i{
+        display: inline-block;
+        .parrafo_i{
+            column-count: 1;
+        }
+    }
 }

@@ -390,4 +390,12 @@ img {
     display: block;
     padding-left: 100px;
   }
+
+  .marco_i {
+    display: inline-block;
+  }
+  .marco_i .parrafo_i {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
